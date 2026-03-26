@@ -1,6 +1,6 @@
 # StreamLinker Cloud
 
-English | [¼òÌåÖÐÎÄ](README.zh-CN.md)
+English | [ç®€ä½“ä¸­æ–‡](README.zh-CN.md)
 
 Enterprise-grade cloud streaming platform for StreamLinker.
 
@@ -18,13 +18,13 @@ Typical pipeline:
 
 ```text
 Camera / Drone
-      ¡ý
+      â†“
 StreamLinker Edge (Windows host)
   pull -> process -> push
-      ¡ý
+      â†“
 StreamLinker Cloud (server)
   receive -> catalog -> play -> operate
-      ¡ý
+      â†“
 Browser console / third-party systems
 ```
 

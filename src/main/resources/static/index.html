@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamLinker Cloud</title>
+    <link rel="stylesheet" href="/admin/cloud.css">
+</head>
+<body>
+<div class="shell">
+    <header class="topbar">
+        <div>
+            <p class="eyebrow">StreamLinker Cloud</p>
+            <h1>Playback Dashboard</h1>
+            <p class="muted">Cloud-side stream catalog with WebRTC-first playback.</p>
+        </div>
+        <div class="topbar-actions">
+            <button id="refreshDashboard" class="button primary">Refresh</button>
+            <a class="button ghost" href="/player.html">Open Player</a>
+        </div>
+    </header>
+
+    <main class="grid two">
+        <section class="panel">
+            <div class="panel-header">
+                <div>
+                    <p class="eyebrow">Edges</p>
+                    <h2>Connected Nodes</h2>
+                </div>
+                <span id="edgeCount" class="badge">0</span>
+            </div>
+            <div id="edgeList" class="stack"></div>
+        </section>
+
+        <section class="panel">
+            <div class="panel-header">
+                <div>
+                    <p class="eyebrow">Streams</p>
+                    <h2>Published Streams</h2>
+                </div>
+                <span id="streamCount" class="badge">0</span>
+            </div>
+            <div id="streamList" class="stack"></div>
+        </section>
+    </main>
+</div>
+<script src="/admin/cloud-index.js"></script>
+</body>
+</html>

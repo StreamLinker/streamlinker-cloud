@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: streamlinker-cloud
+  datasource:
+    url: jdbc:mysql://10.12.6.114:3306/streamlinker_cloud?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: K8#m@xQvL2!pN9chcnav
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      mode: never
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: auto
+
+server:
+  port: 18081
+
+streamlinker:
+  zlm:
+    base-url: http://127.0.0.1:80
+    secret: change-me

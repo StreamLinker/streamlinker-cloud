@@ -3,28 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StreamLinker Player</title>
+    <title>StreamLinker Cloud Player</title>
     <link rel="stylesheet" href="/admin/cloud.css">
     <script src="https://cdn.jsdelivr.net/npm/flv.js@1.6.2/dist/flv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
 </head>
 <body>
 <div class="shell">
-    <header class="topbar compact">
+    <header class="hero hero-compact">
         <div>
             <p class="eyebrow">StreamLinker Cloud</p>
             <h1>Multi-Protocol Player</h1>
+            <p class="hero-copy">Default to WebRTC for low latency, with HTTP-FLV and HLS fallback for browser and network compatibility.</p>
         </div>
-        <div class="topbar-actions">
-            <a class="button ghost" href="/">Back to Dashboard</a>
+        <div class="hero-actions">
+            <button id="refreshPlayerData" class="button button-primary">Refresh</button>
+            <a class="button" href="/">Back to Dashboard</a>
         </div>
     </header>
+
+    <nav class="top-nav">
+        <a class="nav-link" href="/">Dashboard</a>
+        <a class="nav-link is-active" href="/player.html">Player</a>
+    </nav>
 
     <main class="grid player-layout">
         <section class="panel player-panel">
             <div class="panel-header">
                 <div>
-                    <p class="eyebrow">Player</p>
+                    <p class="panel-kicker">Player</p>
                     <h2 id="playerTitle">Select a stream</h2>
                 </div>
                 <div class="tabs">
@@ -45,10 +52,10 @@
         <section class="panel sidebar-panel">
             <div class="panel-header">
                 <div>
-                    <p class="eyebrow">Catalog</p>
+                    <p class="panel-kicker">Catalog</p>
                     <h2>Available Streams</h2>
                 </div>
-                <button id="refreshPlayerData" class="button primary">Refresh</button>
+                <span class="badge">Cloud</span>
             </div>
             <div id="playerStreamList" class="stack"></div>
         </section>

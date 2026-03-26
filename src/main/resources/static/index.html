@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StreamLinker Cloud</title>
+    <title>StreamLinker Cloud Dashboard</title>
     <link rel="stylesheet" href="/admin/cloud.css">
 </head>
 <body>
-<div class="shell">
-    <header class="topbar">
+<div class="shell shell-narrow">
+    <header class="hero hero-compact">
         <div>
             <p class="eyebrow">StreamLinker Cloud</p>
             <h1>Playback Dashboard</h1>
-            <p class="muted">Cloud-side stream catalog with WebRTC-first playback.</p>
+            <p class="hero-copy">Industrial-style cloud console for edge connectivity, published streams, and WebRTC-first viewing.</p>
         </div>
-        <div class="topbar-actions">
-            <button id="refreshDashboard" class="button primary">Refresh</button>
-            <a class="button ghost" href="/player.html">Open Player</a>
+        <div class="hero-actions">
+            <button id="refreshDashboard" class="button button-primary">Refresh</button>
+            <a class="button" href="/player.html">Open Player</a>
         </div>
     </header>
+
+    <nav class="top-nav">
+        <a class="nav-link is-active" href="/">Dashboard</a>
+        <a class="nav-link" href="/player.html">Player</a>
+    </nav>
 
     <main class="grid two">
         <section class="panel">
             <div class="panel-header">
                 <div>
-                    <p class="eyebrow">Edges</p>
+                    <p class="panel-kicker">Edges</p>
                     <h2>Connected Nodes</h2>
                 </div>
                 <span id="edgeCount" class="badge">0</span>
@@ -35,7 +40,7 @@
         <section class="panel">
             <div class="panel-header">
                 <div>
-                    <p class="eyebrow">Streams</p>
+                    <p class="panel-kicker">Streams</p>
                     <h2>Published Streams</h2>
                 </div>
                 <span id="streamCount" class="badge">0</span>
